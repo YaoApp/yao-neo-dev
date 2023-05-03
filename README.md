@@ -17,7 +17,38 @@ yao run scripts.demo.Data
 yao start
 ```
 
-## API
+## Command Mode Test
+
+| Prompt             | Description                  |
+| ------------------ | ---------------------------- |
+| Generate test data | Enter the table.data Command |
+
+**Reponse Event Stream**
+
+```json
+{
+  "done": true,
+  "command": {
+    "id": "table.data", // The command id @/neo/table/data.cmd.yml
+    "name": "Generate test data for the table", // The command name
+    "request": "89c151e1-02bd-467d-8186-540f6cb36e36" // The Request ID
+  }
+}
+```
+
+**Exit the Command Mode**
+
+Command execution completed, or calling the exit command, exits command mode.
+
+```bash
+curl --location --request POST --X POST 'http://localhost:5099/api/__yao/neo?token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic2lkIjoicUhnMDFDRGptOVZUWlZDLWJnUFI1MTY4MzE1MDE5MTQ0MSIsImRhdGEiOnt9LCJhdWQiOiJYaWFuZyBNZXRhZGF0YSBBZG1pbiBQYW5lbCIsImV4cCI6MTY4MzE1Mzc5OCwianRpIjoiMSIsImlhdCI6MTY4MzE1MDE5OCwiaXNzIjoieWFvIiwibmJmIjoxNjgzMTUwMTk4LCJzdWIiOiJVc2VyIFRva2VuIn0.FdL_7OiLL6aMx0zS9ar0yGYmeT1_sAgnF5gncJcruLs' \
+--header 'Content-Type: application/json' \
+--data '{
+    "cmd": "ExitCommandMode"
+}'
+```
+
+## API Reference
 
 ### Chat Stream
 
@@ -208,9 +239,3 @@ Failure:
   "message": "Error: Invalid token"
 }
 ```
-
-## Command mode Test Prompts
-
-| Prompt             | Description                  |
-| ------------------ | ---------------------------- |
-| Generate test data | Enter the table.data Command |
