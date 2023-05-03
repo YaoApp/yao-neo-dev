@@ -19,9 +19,10 @@ yao start
 
 ## Command Mode Test
 
-| Prompt             | Description                  |
-| ------------------ | ---------------------------- |
-| Generate test data | Enter the table.data Command |
+| Prompt             | Description                       |
+| ------------------ | --------------------------------- |
+| Generate test data | Enter the table.data Command mode |
+| 创建一组测试数据   | 进入 table.data 命令交互模式      |
 
 **Reponse Event Stream**
 
