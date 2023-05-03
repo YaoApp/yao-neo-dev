@@ -25,7 +25,7 @@ yao start
 
 **Reponse Event Stream**
 
-```json
+```jsonc
 {
   "done": true,
   "command": {
