@@ -1,0 +1,8 @@
+{
+  "environments": {
+    "YAO_ENV": "production",
+    "YAO_LANG": "zh-CN",
+    "YAO_LOG": "./logs/application.log",
+    "OPENAI_TEST_KEY": "sk-xxxxxxx"
+  }
+}
