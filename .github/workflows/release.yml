@@ -27,9 +27,16 @@ jobs:
             echo "Running Build"
             make
 
-      - name: Archive
+      - name: Archive AMD64
         uses: actions/upload-artifact@v3
         with:
-          name: neo-linux
+          name: neo-0.10.3-linux-amd64
           path: |
-            dist/*
+            dist/neo-0.10.3-linux-amd64
+
+      - name: Archive ARM64
+        uses: actions/upload-artifact@v3
+        with:
+          name: neo-0.10.3-linux-arm64
+          path: |
+            dist/neo-0.10.3-linux-arm64
