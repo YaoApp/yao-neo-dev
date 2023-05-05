@@ -30,6 +30,6 @@ jobs:
       - name: Archive
         uses: actions/upload-artifact@v3
         with:
-          name: dev-app-linux
+          name: neo-linux
           path: |
             dist/*
