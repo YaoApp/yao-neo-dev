@@ -9,6 +9,6 @@
   "optional": {
     "hideNotification": true,
     "hideSetting": false,
-    "neo": { "api": "http://localhost:5099/api/__yao/neo" }
+    "neo": { "api": "/api/__yao/neo" }
   }
 }
