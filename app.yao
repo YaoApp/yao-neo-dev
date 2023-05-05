@@ -6,9 +6,10 @@
   "adminRoot": "admin",
   "setup": "scripts.demo.Data",
   "menu": { "process": "flows.app.menu", "args": ["demo"] },
+  "public": { "pwa": true },
   "optional": {
     "hideNotification": true,
     "hideSetting": false,
-    "neo": { "api": "/api/__yao/neo" }
+    "neo": { "api": "/neo" }
   }
 }
